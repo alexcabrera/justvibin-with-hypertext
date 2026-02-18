@@ -1,0 +1,20 @@
+[template]
+name = "hypertext"
+description = "Vanilla HTML/CSS/JS with HTMX - simple static site"
+version = "1.0.0"
+author = "Alex Cabrera"
+url = "https://github.com/alexcabrera/justvibin-with-hypertext"
+
+[scaffold]
+exclude = [
+    ".git",
+    "justvibin.toml",
+    ".justvibin",
+    ".DS_Store"
+]
+
+[serve]
+type = "static"
+
+[serve.static]
+root = "."

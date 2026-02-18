@@ -16,7 +16,7 @@ justvibin new mysite --template hypertext
 
 # Start a local server
 cd mysite
-./serve.sh
+justvibin start
 ```
 
 ### Manual Setup
@@ -44,10 +44,9 @@ Then open http://localhost:8000 in your browser.
 │   └── main.js         # Custom JavaScript
 ├── lib/
 │   └── htmx.min.js     # HTMX library (v2.0.4)
-├── partials/           # HTML fragments for HTMX
-│   ├── hello.html
-│   └── more.html
-└── serve.sh            # Simple local server script
+└── partials/           # HTML fragments for HTMX
+    ├── hello.html
+    └── more.html
 ```
 
 ## Features

@@ -22,8 +22,7 @@ This is a simple static website template with HTMX for dynamic interactions. No 
 ├── css/style.css       # Stylesheet
 ├── js/main.js          # Custom JavaScript
 ├── lib/htmx.min.js     # HTMX library
-├── partials/           # HTML fragments for HTMX
-└── serve.sh            # Local development server
+└── partials/           # HTML fragments for HTMX
 ```
 
 ## HTMX Patterns
@@ -54,15 +53,25 @@ Store HTML fragments in `/partials/` for HTMX to load. These are complete HTML s
 
 ## Development
 
-### Start Local Server
+### With justvibin (Recommended)
 
 ```bash
-./serve.sh
-# or
-python3 -m http.server 8000
+justvibin start    # Start server
+justvibin open     # Open in browser
+justvibin stop     # Stop server
+justvibin tunnel   # Share publicly
 ```
 
-### Adding Pages
+Your site is at https://<project-name>.localhost
+
+### Without justvibin
+
+```bash
+python3 -m http.server 8000
+# Visit http://localhost:8000
+```
+
+## Adding Pages
 
 1. Create new HTML files (e.g., `about.html`, `contact.html`)
 2. Use the same structure as `index.html`
