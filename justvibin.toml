@@ -6,12 +6,7 @@ author = "Alex Cabrera"
 url = "https://github.com/alexcabrera/justvibin-with-hypertext"
 
 [scaffold]
-exclude = [
-    ".git",
-    "justvibin.toml",
-    ".justvibin",
-    ".DS_Store"
-]
+exclude = [".git", "justvibin.toml", ".justvibin", ".DS_Store"]
 
 [serve]
 type = "static"
