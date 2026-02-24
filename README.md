@@ -14,10 +14,12 @@ brew install justvibin
 # Create a new project
 justvibin new mysite --template hypertext
 
-# Start a local server
+# Start the development server
 cd mysite
-justvibin start
+justvibin dev
 ```
+
+Your site is now available at `https://mysite.<hostname>.local`
 
 ### Manual Setup
 
@@ -56,6 +58,16 @@ Then open http://localhost:8000 in your browser.
 - **Responsive** - Mobile-friendly out of the box
 - **Fast** - No heavy frameworks or dependencies
 - **Easy Deployment** - Deploy to any static hosting
+
+## Commands
+
+```bash
+# Development (with justvibin)
+justvibin dev               # Start local server with HTTPS
+
+# Share publicly via tunnel
+justvibin share             # Local server + cloudflared tunnel
+```
 
 ## HTMX Usage
 
